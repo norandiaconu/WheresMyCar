@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingActivity" >
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.norandiaconu.wheresmycar.ParkingActivity" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/savebutton"
+            android:text="@string/save_button"
+            android:textColor="@color/colorText"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="8dp"
+            android:layout_width="160dp"
+            android:layout_height="60dp" />
+        <Button
+            android:id="@+id/clearbutton"
+            android:text="@string/clear_buton"
+            android:textColor="@color/colorText"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="160dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <NumberPicker
+        android:id="@+id/floorpicker"
+        android:background="@color/colorPrimary"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="2dp">
+    </NumberPicker>
+
+
+</FrameLayout>
